@@ -1,0 +1,21 @@
+/* .filter-container already exists or create it */
+.filter-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .filter-container label {
+    font-weight: 600;
+  }
+  
+  /* Specifically style the date input */
+  .filter-input {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; 
+    /* Add more if you want, e.g. background-color, text color, etc. */
+  }
+  
