@@ -1,21 +1,21 @@
 import React from 'react';
-import { SalesProvider } from './context/SalesContext';
-import SalesFilter from './Components/SalesFilter';
-import SalesChart from './Components/SalesChart';
-import './styles/dashboard.css'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import './styles/globals.css';
 
 function App() {
   return (
-    <SalesProvider>
-      {/* 2. Replace inline style with the .dashboard-container class */}
-      <div className="dashboard-container">
-        {/* 3. Give your heading the .dashboard-title class */}
-        <h1 className="dashboard-title">My Sales Dashboard</h1>
-
-        <SalesFilter />
-        <SalesChart />
-      </div>
-    </SalesProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/bar" element={<Dashboard />} />
+        <Route path="/line" element={<Dashboard />} />
+        <Route path="/pie" element={<Dashboard />} />
+        <Route path="/area" element={<Dashboard />} />
+        <Route path="/table" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 

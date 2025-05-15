@@ -1,0 +1,42 @@
+export const salesData = {
+  monthly: [
+    { month: 'Jan', sales: 4000, revenue: 2400 },
+    { month: 'Feb', sales: 3000, revenue: 1398 },
+    { month: 'Mar', sales: 2000, revenue: 9800 },
+    { month: 'Apr', sales: 2780, revenue: 3908 },
+    { month: 'May', sales: 1890, revenue: 4800 },
+    { month: 'Jun', sales: 2390, revenue: 3800 },
+  ],
+  byCategory: [
+    { category: 'Electronics', value: 35 },
+    { category: 'Clothing', value: 25 },
+    { category: 'Food', value: 20 },
+    { category: 'Books', value: 15 },
+    { category: 'Other', value: 5 },
+  ],
+  daily: [
+    { date: '2024-01-01', users: 100, sessions: 150 },
+    { date: '2024-01-02', users: 120, sessions: 180 },
+    { date: '2024-01-03', users: 90, sessions: 140 },
+    { date: '2024-01-04', users: 150, sessions: 220 },
+    { date: '2024-01-05', users: 200, sessions: 300 },
+    { date: '2024-01-06', users: 180, sessions: 270 },
+    { date: '2024-01-07', users: 160, sessions: 240 },
+  ],
+  products: [
+    { id: 1, name: 'Laptop', price: 999, stock: 50, category: 'Electronics' },
+    { id: 2, name: 'Smartphone', price: 699, stock: 100, category: 'Electronics' },
+    { id: 3, name: 'Headphones', price: 199, stock: 75, category: 'Electronics' },
+    { id: 4, name: 'T-shirt', price: 29, stock: 200, category: 'Clothing' },
+    { id: 5, name: 'Jeans', price: 79, stock: 150, category: 'Clothing' },
+    { id: 6, name: 'Sneakers', price: 129, stock: 80, category: 'Clothing' },
+    { id: 7, name: 'Coffee', price: 4, stock: 500, category: 'Food' },
+    { id: 8, name: 'Sandwich', price: 8, stock: 100, category: 'Food' },
+  ],
+  regions: [
+    { region: 'North', value: 30 },
+    { region: 'South', value: 25 },
+    { region: 'East', value: 20 },
+    { region: 'West', value: 25 },
+  ],
+}; 
